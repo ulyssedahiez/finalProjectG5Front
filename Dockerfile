@@ -1,7 +1,5 @@
-FROM alpine:latest
+FROM httpd:latest
 
-WORKDIR /APP
+COPY . /usr/local/apache2/htdocs/finalProjectG5Front
 
-COPY . /APP/
-
-RUN 
+EXPOSE 80
